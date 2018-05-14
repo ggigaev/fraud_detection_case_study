@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: mongo:3.7-jessie
+    expose:
+      - "27017"
+    ports:
+      - "27017:27017"
+    environment:
+      ROOT_URL: http://localhost
+      MONGO_URL: mongodb://localhost:27017
